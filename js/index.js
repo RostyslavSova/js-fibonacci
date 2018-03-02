@@ -1,5 +1,5 @@
 function fibRecursion(n) {
-    return n <= 2 ? n : fibRecursion(n - 1) + fibRecursion(n - 2);
+    return n <= 1 ? n : fibRecursion(n - 1) + fibRecursion(n - 2);
 }
 
 function fibCycle(n) {
