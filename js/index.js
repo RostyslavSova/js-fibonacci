@@ -1,11 +1,11 @@
 function fibRecursion(n) {
-    return n <= 1 ? n : fibRecursion(n - 1) + fibRecursion(n - 2);
+    return n <= 2 ? n : fibRecursion(n - 1) + fibRecursion(n - 2);
 }
 
 function fibCycle(n) {
     let a = 1;
     let b = 1;
-    for (let i = 3; i <= n; i++) {
+    for (let i = 2; i <= n; i++) {
         let c = a + b;
         a = b;
         b = c;
@@ -13,7 +13,7 @@ function fibCycle(n) {
     return b;
 }
 
-let arrOfFib = [0, 1, 1];
+let arrOfFib = [1, 1];
 
 function fibArray(n) {
     if (n in arrOfFib) {
